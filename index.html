@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="personal.css">
-	<script src="personal.js"></script>
+	<script type="text/javascript" src="darkmode.js" defer></script>
 	<title>Jacob Amisano</title>
 </head>
 <body id="body">
@@ -12,14 +12,19 @@
 		<a href="#body">Home</a>
 	    <a href="#projects">Projects</a>
 	    <a href="#work">Work</a>
-	    <a href="#contact">Contact</a>
+	    <a href="#feedback">Feedback</a>
+		
 	</div>
+	<button id="theme-switch">
+		<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+		<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+	</button>
 	<div class="section1">
 		<h1 class="title-header">Jacob Amisano</h1>
 		<p class="description">
-			Hello, and welcome to my personal website showcasing some of my personal accomplishments and expierence. I'm currently studying at The University of Nebraska-Lincoln with an expected graduation year of 2025 to obtain a Bachelor degree for Software Engineering. Below i've included overviews for some of my projects and work expierence.
+			Hello, and welcome to my website showcasing some of my accomplishments and expierence. I'm currently studying at The University of Nebraska-Lincoln with an expected graduation year of 2025 to obtain a Bachelor degree for Software Engineering. Below i've included overviews for some of my projects and work expierence.
 		</p>
-		<img id="grayscale-self" src="images/grayscale-self.png"/ alt="Jacob Amisano image">
+		<img id="selfie" src="images/VR_selfie.jpg" alt="Jacob Amisano image">
 	</div>
 	<div class="section2">
 		<h1 class="title-header" id="projects">Projects</h1>
@@ -27,50 +32,54 @@
 			Below are some of the projects I've developed, both alone and in groups. If a project was developed by multiple people including myself, it will be specified in the description of the project. If you are a prospective employer and have any questions regarding any of my projects listed below, feel free to reach out to me using my contact information available at the bottom of the page.
 		</p>
 		<div class="section" >
-
 			<h2><a href="https://github.com/AbyssmalGame/Abyssmal" class="hidden-default" target="blank">Abyssmal - VR Game</a></h2>
-			<div class="row">
-				<span class="column">
-					<span class="description">
-						Abyssmal is an underwater survival horror game with some roguelike elements that is currently under development. The game is developed using Unity and Steam VR and has features such as omni-directional simulated swimming movement, upgradeable stats and weapons to help the player survive, and oxygen timer for how long they can be in a level, along with a variety of levels and enemies. The goal of the game is to find your research partner who was lost at sea. As you progress deeper through a variety of levels, the player is introduced to story elements and new features to keep them on their toes. I collaborated with 2 other computing students and 2 art students focusing on visuals for this project.
-					</span>
-				</span class="column">
-
-				<span class="column"> 		
+			<div class="flex-row">
+				<span class="flex-row-description">
+					Abyssmal is an underwater survival horror game with some roguelike elements that is currently under development. The game is developed using Unity and Steam VR and has features such as omni-directional simulated swimming movement, upgradeable stats and weapons to help the player survive, and oxygen timer for how long they can be in a level, along with a variety of levels and enemies. The goal of the game is to find your research partner who was lost at sea. As you progress deeper through a variety of levels, the player is introduced to story elements and new features to keep them on their toes. I collaborated with 2 other computing students and 2 art students focusing on visuals for this project.
 				</span>
+				
+				<img height="343" width="157" src="images/Clownup.png" class="flex-row-media"/>
+
+			</div>
+
+			<h2>Warmle</h2>
+			<div class="flex-row">
+				<span class="flex-row-description"> 
+					Warmle is a website developed as a part of my software architecture course co-developed with 4 other students. The goal of the site is to provide a two player alternative to the popular game Wordle. In this setting one player inserts a word, while the other player is trying to guess it. As the second player guesses, they're given feedback in the form of red and blue colors on each letter following the idea of warmer (more red) being better than cold.
+				</span>
+
+				<img style="width:700px" src="images/warmle.PNG" class="flex-row-media"/>
 			</div>
 
 			<h2>Know Your Well 2.0</h2>
-			<div class="row">
-				<span class="column">
-					<span class="description">
-						The Know Your Well 2.0 app was developed for Nebraska Water Center as a part of my 2023-2024 senior design project. This is my first of two projects. The application utilzes a variety of technologies but is primarily web based and is in the form of a progressive web application (PWA) allowing the user to install a local variant on their phone. The apps' primary function is to allow students and teachers enter water-well information to then be stored on an Azure backend. This information is then used by Know Your Well as a centralized source of information as they recieve water samples from other sources for said wells. Some of the features my team implemented include Single Sign On (SSO), Offline handling, CSV exporting for files, searching existing well entries, and many more.
-					</span>
-				</span class="column">
-
-				<span class="column"> 
-					<iframe width="420" height="315" src="https://www.youtube.com/embed/7w1_GLatVOU" class="project-image"></iframe> 		
+			<div class="flex-row">
+				<span class="flex-row-description">
+					The Know Your Well 2.0 app was developed for Nebraska Water Center as a part of my 2023-2024 senior design project. This is my first of two projects. The application utilzes a variety of technologies but is primarily web based and is in the form of a progressive web application (PWA) allowing the user to install a local variant on their phone. The apps' primary function is to allow students and teachers enter water-well information to then be stored on an Azure backend. This information is then used by Know Your Well as a centralized source of information as they recieve water samples from other sources for said wells. Some of the features my team implemented include Single Sign On (SSO), Offline handling, CSV exporting for files, searching existing well entries, and many more.
 				</span>
-			</div>
-			<h2>Lincoln Weather App</h2>
-			<span class="description"> 
-				The Lincoln weather app was developed as a part of my final project for Meteorology 100 in my sophmore year of college. The goal of this project was to have an automated determination output for sports such as football, baseball, and soccer. The application uses hard-coded coordinates of popular lincoln stadiums such as [INSERT STADIUMS HERE] to send a request to the OpenWeather Connector API which returns weather data for these locations. The application then uses an algorithm to rate the given weather for the sport as "Good", "Great", "Bad", or "Canceled" and returns a screen with these ratings with their respective sports. Within this project I collaborated with 4 other students. I was responsible for helping with the visual elements of this project which can be preiviewed below.
-			</span>
 
-			<h2>Warmle</h2>
-			<span class="description"> 
-				Warmle is a website developed as a part of my software architecture course co-developed with 4 other students. The goal of the site is to provide a two player alternative to the popular game Wordle. In this setting one player inserts a word, while the other player is trying to guess it. As the second player guesses, they're given feedback in the form of red and blue colors on each letter following the idea of warmer (more red) being better than cold.
-			</span>
+				<iframe src="https://www.youtube.com/embed/7w1_GLatVOU" class="flex-row-media flex-row-iframe"></iframe> 		
+
+			</div>
+
+			<h2>Lincoln Weather App</h2>
+			<div class="flex-row">
+				<span class="flex-row-description"> 
+					The Lincoln weather app was developed as a part of my final project for Meteorology 100 in my sophmore year of college. The goal of this project was to have an automated determination output for sports such as football, baseball, and soccer. The application uses hard-coded coordinates of popular lincoln stadiums such as [INSERT STADIUMS HERE] to send a request to the OpenWeather Connector API which returns weather data for these locations. The application then uses an algorithm to rate the given weather for the sport as "Good", "Great", "Bad", or "Canceled" and returns a screen with these ratings with their respective sports. Within this project I collaborated with 4 other students. I was responsible for helping with the visual elements of this project which can be preiviewed below.
+				</span>
+
+				<image style="width:500px" src="images/weather.png" class="flex-row-media">
+
+			</div>
+
+
 
 			<h2>Personal JS Library</h2>
-			<div class="row">
-				<span class="column">
-					<span class="description">
-						This is a personal Javascript library currently under development aimed to provide a central hub for a variety of common programming practices ranging from ADT implementation to common algorithms such as tree searches. While developing this library, i've aimed to keep things abstract and modular for ease of use in both development and testing. This project has been a great help, not only having this implementation at hand, but has also helped me grow my understanding of more advanced algorithms through implementing and testing for validity. 
-					</span>
-				</span class="column">
+			<div class="flex-row">
+				<span class="flex-row-description">
+					This is a personal Javascript library currently under development aimed to provide a central hub for a variety of common programming practices ranging from ADT implementation to common algorithms such as tree searches. While developing this library, i've aimed to keep things abstract and modular for ease of use in both development and testing. This project has been a great help, not only having this implementation at hand, but has also helped me grow my understanding of more advanced algorithms through implementing and testing for validity. 
+				</span>
 
-				<span class="column"><img height="343" width="157" src="images/Clownup.png" class="project-image"/></span>
+				<img height="343" width="157" src="images/Clownup.png" class="flex-row-media"/>
 			</div>
 		</div>
 	</div>
@@ -80,17 +89,17 @@
 		<p class="description">
 			I hope to expand my knowledge over software development fields through a variety of internships while pursuing my degree in Software Engineering from The University of Nebraska-Lincoln.
 		</p>
-		<div class="section">
+		<div class="section flex-row">
 			<h2>Ameritas: <i>Identity Security Intern</i></h2>
-			<span class="description">
+			<span class="flex-row-text">
 				At Ameritas, I've had the opportunity to develop several processes and improve upon existing workflows to help with automation inside their Identity Access Management (IAM) system. Through some of these projects I've been able to improve my knowledge over IAM principles, Azure, and common languages such as JavaScript, XML, and Powershell.
 			</span> 
 			<h2>Firespring: <i>Software Engineering Intern</i></h2>
-			<span class="description">
+			<span class="flex-row-text">
 				While working at Firespring, I was responsible for completing stories directly correlated to their Agile Scrum process for their main development platform. I mainly worked to fix bugs within their development platform and client portal. I collaborated with 9 other team members on the development team. 
 			</span>
 			<h2>Woodlands at Hillcrest: <i>Server</i></h2>
-			<span class="description">
+			<span class="flex-row-text">
 				<i>The Woodlands at Hillcrest has rebranded to Aviva Woodlands after I left.</i>
 				<br><br>
 				While at the woodlands my responsibilities included but were not limited to, cleaning, serving residents, communicating efficiently with coworkers, and serving residents. The Woodlands was an amazing experience for me, between my coworkers, 
@@ -119,14 +128,4 @@
 		</script>
 	</div>
 </body>
-
-<footer>
-	<p id="contact">
-		Jacob Amisano<br>
-		(704) 232-3636<br>
-		jpamisano@gmail.com<br>
-	</p>
-
-
-</footer>
 </html>
