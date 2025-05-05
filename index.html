@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="personal.css">
 	<script type="text/javascript" src="darkmode.js" defer></script>
 	<script type="text/javascript" src="send-email-request.js" defer></script>
+	<script type="text/javascript" src="collapsible.js" defer></script>
 	<title>Jacob Amisano</title>
 </head>
 <body id="body">
@@ -25,7 +26,18 @@
 		<p class="description">
 			Hello, and welcome to my website showcasing some of my accomplishments and expierence. I'm currently studying at The University of Nebraska-Lincoln with an expected graduation year of 2025 to obtain a Bachelor degree for Software Engineering. Below i've included overviews for some of my projects and work expierence.
 		</p>
-		<img id="selfie" src="images/VR_selfie.jpg" alt="Jacob Amisano image">
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img style="width: 450px; height: 300px;"  src="images/VR_selfie.jpg" alt="Jacob Amisano image">
+				</div>
+				<div class="flip-card-back">
+					<h1>Jacob Amisano</h1>
+					<p>Software Engineer / VR enthusiast</p>
+					<p>Pretty cool</p>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="section2">
 		<h1 class="title-header" id="projects">Projects</h1>
@@ -39,8 +51,27 @@
 					Abyssmal is an underwater survival horror game with some roguelike elements that is currently under development. The game is developed using Unity and Steam VR and has features such as omni-directional simulated swimming movement, upgradeable stats and weapons to help the player survive, and oxygen timer for how long they can be in a level, along with a variety of levels and enemies. The goal of the game is to find your research partner who was lost at sea. As you progress deeper through a variety of levels, the player is introduced to story elements and new features to keep them on their toes. I collaborated with 2 other computing students and 2 art students focusing on visuals for this project.
 				</span>
 				
-				<img height="343" width="157" src="images/Clownup.png" class="flex-row-media"/>
 
+				<div class="flip-card" style="width:450px; height:450px;">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img style="width: 450px; height: 450px;"  src="images/abyssmal.jpeg" alt="Jacob Amisano image">
+						</div>
+						<div class="flip-card-back">
+							<h1>Kraken Enemy</h1>
+							<p>Found on level 5 of the game</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button type="button" class="collapsible">More info...</button>
+			<div class="collapsible-content">
+				<span>
+					Features of the game include shooting, custom reloading, enemy animations, upgrades, and more.<br>
+					<br><br>
+					The player uses materials gathered from killing enemies to upgrade their stats such as Oxygen and Health, and to buy weapons.
+				</span>
 			</div>
 
 			<h2>Warmle</h2>

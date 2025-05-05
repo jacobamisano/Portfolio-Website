@@ -1,0 +1,35 @@
+:root {
+	--iframe-width: 600px;
+	--iframe-height: 355px;
+
+	--navbar-bg: #333;
+	--navbar-text: #f2f2f2;
+	--navbar-hover-bg: #ddd;
+	--navbar-hover-text: #000;
+	--section1-color: #e4e5f1;
+	--section2-color: #d2d3db;
+	--text-color: #000;
+	--link-hover-text: #597dff;
+	--feedback-input-bg: #fff;
+	--theme-switch-bg: #ddd;
+	--theme-switch-fill: #0d0d0d;
+    --flip-card-bg: #161722;
+    --reverse-text-color: #eee;
+    --collapsible-button: #b2b5cf;
+    --collapsible-bg: #afb3da;
+    --collapsible-active: #9395ad;
+    --collapsible-button-text: #eee;
+}
+.darkmode {
+	--section1-color: #161722;
+	--section2-color: #25273c;
+	--text-color: #eee;
+	--link-hover-text: lightblue;
+	--feedback-input-bg: #000;
+    --flip-card-bg: #e4e5f1;
+    --reverse-text-color: #000;
+    --collapsible-button: #383c58;
+    --collapsible-bg: #343861;
+    --collapsible-active: #191c2c;
+    --collapsible-button-text: #eee;
+}

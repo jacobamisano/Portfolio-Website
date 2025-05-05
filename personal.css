@@ -1,27 +1,8 @@
-:root {
-	--iframe-width: 600px;
-	--iframe-height: 355px;
+@import url('card.css');
+@import url('darkmode.css');
+@import url('collapsible.css');
 
-	--navbar-bg: #333;
-	--navbar-text: #f2f2f2;
-	--navbar-hover-bg: #ddd;
-	--navbar-hover-text: #000;
-	--section1-color: #e4e5f1;
-	--section2-color: #d2d3db;
-	--text-color: #000;
-	--link-hover-text: #597dff;
-	--feedback-input-bg: #fff;
-	--theme-switch-bg: #ddd;
-	--theme-switch-fill: #0d0d0d;
-}
-.darkmode {
 
-	--section1-color: #161722;
-	--section2-color: #25273c;
-	--text-color: #eee;
-	--link-hover-text: lightblue;
-	--feedback-input-bg: #000;
-}
 #theme-switch {
 	height: 40px;
 	width:40px;
@@ -34,6 +15,7 @@
 	top:5px;
 	right:5px;
 	text-decoration: none;
+	z-index: 11;
 }
 #theme-switch svg {
 	fill: var(--theme-switch-fill)
@@ -125,6 +107,7 @@ input[type=email] {
   top: 0;
   position:fixed;
   width:100%;
+  z-index: 10;
 }
 #navigation-bar a {
   float: left;
@@ -144,6 +127,9 @@ input[type=email] {
 	margin-right: auto;
 	text-align: center;
 	margin-top:0;
+}
+#projects, #work, #feedback {
+	scroll-margin-top: 60px;
 }
 
 .flex-row {
@@ -191,11 +177,6 @@ input[type=email] {
 }
 
 
-
-.project-image {
-	margin-left:auto;
-	margin-right:auto;
-}
 .title-header {
  font-size: 65px;
  text-align: center;
