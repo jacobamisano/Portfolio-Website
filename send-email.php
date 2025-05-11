@@ -8,11 +8,6 @@ $feedback = $_POST["feedback"];
 require "vendor\autoload.php";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
-//app password = "nzqr jqls wwsd dluw"
-// Host name = smtp.gmail.com
-// Name = Dummy Gmail
-// username = jacob.portfolio.mailserver@gmail.com
-// SMTP password = 
 $mail = new PHPMailer(true);
 
 $mail->isSMTP();

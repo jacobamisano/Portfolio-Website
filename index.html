@@ -24,7 +24,7 @@
 	<div class="section1">
 		<h1 class="title-header">Jacob Amisano</h1>
 		<p class="description">
-			Hello, and welcome to my website showcasing some of my accomplishments and expierence. I'm currently studying at The University of Nebraska-Lincoln with an expected graduation year of 2025 to obtain a Bachelor degree for Software Engineering. Below i've included overviews for some of my projects and work expierence.
+			Hello, and welcome to my website showcasing some of my accomplishments and expierence. I'm currently studying at The University of Nebraska-Lincoln to obtain a Bachelor degree for Software Engineering graduating in december 2025. Below i've included overviews for some of my projects and work expierence.
 		</p>
 		<div class="flip-card">
 			<div class="flip-card-inner">
@@ -34,7 +34,7 @@
 				<div class="flip-card-back">
 					<h1>Jacob Amisano</h1>
 					<p>Software Engineer / VR enthusiast</p>
-					<p>Pretty cool</p>
+					<p><i>SRC: UNL Senior Design Showcase 2024-2025 | UNMC CoN Journey Through the Kidney</i></p>
 				</div>
 			</div>
 		</div>
@@ -45,13 +45,26 @@
 			Below are some of the projects I've developed, both alone and in groups. If a project was developed by multiple people including myself, it will be specified in the description of the project. If you are a prospective employer and have any questions regarding any of my projects listed below, feel free to reach out to me using my contact information available at the bottom of the page.
 		</p>
 		<div class="section" >
-			<h2><a href="https://github.com/AbyssmalGame/Abyssmal" class="hidden-default" target="blank">Abyssmal - VR Game</a></h2>
+			<h2><a href="https://github.com/AbyssmalGame/Abyssmal" class="hidden-default" target="blank">Abyssmal - VR Game</a> - <i>March 2025-May 2025</i></h2>
 			<div class="flex-row">
 				<span class="flex-row-description">
-					Abyssmal is an underwater survival horror game with some roguelike elements that is currently under development. The game is developed using Unity and Steam VR and has features such as omni-directional simulated swimming movement, upgradeable stats and weapons to help the player survive, and oxygen timer for how long they can be in a level, along with a variety of levels and enemies. The goal of the game is to find your research partner who was lost at sea. As you progress deeper through a variety of levels, the player is introduced to story elements and new features to keep them on their toes. I collaborated with 2 other computing students and 2 art students focusing on visuals for this project.
+					Abyssmal is an underwater survival horror game with some roguelike elements that was developed in Spring 2025. This project was a collaborative effort between myself, 2 other computing students,
+					and two art students focusing on making the models, animations, audio and terrain. This was a great expereince and really put into perspective time constraints while planning our project. 
+					On average close to 15 hours a week were spent working on this project.
+					<br><br>
+					The game is developed using Unity and Steam VR and has features such as omni-directional simulated swimming movement, upgradeable stats and weapons to help the player survive, 
+					and an oxygen timer for how long they can be in a level. The goal of the game is to find your research partner who was lost at sea. As you progress deeper through a variety of levels, 
+					the player is introduced to story elements and new enemies to keep them on their toes. 
+					<br><br>
+					A wide variety of enemies exist in the game and follow one of three formats being a swimming-melee, swimming-ranged, or ground-melee. Each of the swimming enemies have omnidirectional movement
+					and track the player. When the player enters their range, they begin to attack whether that be a delayed melee dash attack, or particle-system based ranged attack dealing damage over time. 
+					We wanted the player to have fun avoiding the enemies, so our main way to avoid damage is utilizing the movemnt built in swimming around to avoid enemies as they get close. 
+					<br><br>
+					The main features I worked on were implementing menu functionality, weapons (and a custom reloading feature), handling damage between weapons and enemies along with handling their deaths. 
+					Weapons shoot out new projectiles that self destroy after a few seconds or on collision. For our reloading functionality, an ammo pouch follows the player's hip, that when interacted with 
+					their left hand spawns in a magazine for the equipped object. My favorite, the APS Rifle, is setup so the magazine also ejects when it empties or introducing a new magazine when it is below full.
 				</span>
 				
-
 				<div class="flip-card" style="width:450px; height:450px;">
 					<div class="flip-card-inner">
 						<div class="flip-card-front">
@@ -59,20 +72,73 @@
 						</div>
 						<div class="flip-card-back">
 							<h1>Kraken Enemy</h1>
-							<p>Found on level 5 of the game</p>
+							<p><i>SRC: Abyssmal level 5.</i></p>
+							<p>This is our "boss" enemy. Our initial plan was to try and have a stealth-based leviathan enemy for the final two levels, however that ended up getting cut and replaced
+								by the kraken due to time constraints.
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<button type="button" class="collapsible">More info...</button>
+			
+			<br><button type="button" class="collapsible">More info...</button>
 			<div class="collapsible-content">
 				<span>
-					Features of the game include shooting, custom reloading, enemy animations, upgrades, and more.<br>
-					<br><br>
-					The player uses materials gathered from killing enemies to upgrade their stats such as Oxygen and Health, and to buy weapons.
+					<br>
+					A trailer and gameplay video are currently under development. When we get those released, I'll update this to include links to those.<br>
+					<br>
 				</span>
 			</div>
+
+			<!--UNMC PROJECT-->
+			<h2>UNMC College of Nursing Journey Through the Kidney - <i>August 2024-May 2025</i></h2>
+			<div class="flex-row">
+				<span class="flex-row-description">
+					The Journey through the kidney project was developed for UNMC, <a href="https://www.xrenegades.com/about" class="hidden-default" target="_blank">XRenegades</a>, and 
+					<a href="https://curioxr.org/" class="hidden-default" target="_blank">Curio XR</a> as a part of my seecond senior capstone project by myself and 5 other computing students. 
+					We aimed to build upon the previous year's <a href="https://www.youtube.com/watch?v=DlfDeU-TETE" class="hidden-default" target="_blank">Heart Tour project</a> by implementing 
+					an immersive tour throughout the kidney and nephron. This project was developed using Unity and the Open XR VR development plugin.
+					<br><br>
+					Our project is exclusively hand-tracking based, so controllers aren't needed. A peace sign gesture is used to move forward and backwards depending on whether its facing away or towards the player.
+					A pinching gesture with an open palm can be used to interact with our "Checkpoint Orbs" placed throughout the tour that have a description of the player's location, key for particles present, and 
+					mini-models for both the kidney and nephron. Each of these mini-models are moveable by the player, and show the player's current location in the respective model. Throughout the tour particles
+					such as proteins, water, blood cells, and waste are present and change depending on the location.
+					<br><br>
+					The checkpointed parts of the tour include the Renal Artery, Arterioles, Peritubular Capillaries, Glomerulus, Proximal Tubule, Descending/Ascending Loop of Henle, Distal Tubule, Collecting Duct, 
+					Aquaporins, Bladder, and Active Transport. 
+				</span>
+				
+				<div class="flip-card" style="width: 540px; height: 361px;">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img style="width: 540px; height: 361px;"  src="images/UNMC-Showcase2.jpg" alt="UNMC Showcase">
+							
+						</div>
+						<div class="flip-card-back">
+							<h1>User Playing our Tour</h1>
+							<p><i>SRC: UNL Senior Design Showcase 2024-2025</i></p>
+							<p>
+								Here you can see one of our players going through our tour using a peace sign gesture to move forward near the start of the kidney.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<br><button type="button" class="collapsible">More info...</button>
+			<div class="collapsible-content">
+				<span>
+					<br>
+					Our presentation video is currently being edited by the school. I'll post it here once it's finalized.<br>
+					<br>
+					Also Uretors would normally be between the collecting duct and bladder, but due to time constraints our project didn't account for these.
+					<br><br>
+				</span>
+			</div>
+			<!--END UNMC PROJECT-->
+
+
 
 			<h2>Warmle</h2>
 			<div class="flex-row">
